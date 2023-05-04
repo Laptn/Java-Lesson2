@@ -1,0 +1,25 @@
+package simple;
+import java.util.Scanner;
+
+public class laptinov {
+    public static void main(String[] args)
+    // {
+     //   System.out.println("Laptinov Yurii, QA manual experience 4 month");
+    //}
+
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введіть число: ");
+        int number = in.nextInt();
+        double divisionResult = (double) number / 6;
+        System.out.println("Результат ділення на 6: " + divisionResult);
+        int remainder = number % 6;
+        System.out.println("Остача від ділення на 6: " + remainder);
+        double oppositeNumber = -number;
+        System.out.println("Протилежне число: " + oppositeNumber);
+    }
+        public static double findOppositeNumber(double number){
+        return -number;
+    }
+}
+
