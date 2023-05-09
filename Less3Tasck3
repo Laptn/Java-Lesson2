@@ -1,0 +1,24 @@
+package Lesson3;
+import java.util.Scanner;
+
+public class wordFinder {
+        public static void main(String[] args) {
+            Scanner in = new Scanner(System.in);
+
+            System.out.println("Enter number:");
+            String input = in.nextLine();
+
+            System.out.println("Enter a search word:");
+            String wordToFind = in.nextLine();
+
+            System.out.println("Enter a replacement word:");
+            String replacement = in.nextLine();
+
+            String output = input.replace(wordToFind, replacement);
+
+            System.out.println("Result:");
+            System.out.println(output);
+        }
+    }
+
+}
