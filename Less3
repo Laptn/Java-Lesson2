@@ -1,0 +1,19 @@
+package lesson3.HW;
+
+public class Lesson3laptinov {
+        public static void main(String[] args) {
+            int Year = 1990;
+            int Class = 1;
+
+            for (int i = 0; i < 12; i++) {
+                System.out.println(Year + "/" + String.format("%d", i + 1) + " " + Class + " класс");
+                Class++;
+
+                if (Class >= 12) {
+                    Class = 1;
+                    Year++;
+                }
+            }
+        }
+
+}
